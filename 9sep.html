@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<Script>
+    //Predict the output of the following
+    console.log(true&&false); 
+    //The Output will be false because while using the (AND) && operator it will provide the out put as true only when both the sides are true other wise false.
+    console.log(true || false); 
+    //The Output will be true and its only due to the operator we are using (OR) || as it will only provide the output as false when both the option are false otherwise true only.
+    console.log(!false); 
+    //TRUE is the output that we are gonna get as the operator which is being used ! helps to convert it to the opposite for eg. If it was !True than it is False.
+    
+    //2.	Write a program that checks if a number is between 10 and 50 (both inclusive).
+    let a=15;
+    if (a>=15 && a<=50) {
+        console.log("This number is between the requirements");
+    }else{
+        console.log("This number falls outside the requirements");
+         }
+
+    //3.	Check if a student passes only if marks>= 40 and attendance>= 75.
+    let marks=80;
+    let attendance=80;
+    if (marks>=40 && attendance>=75) {
+        console.log("This student is passed");
+    }else{
+        console.log("This student is failed");
+        }
+
+
+    //4.Write a script that prints 'Login successful' only when both username and password are correct.
+
+        let username = "admin";
+        let password = "12345";
+        if (username === "admin" && password === "12345") {
+        console.log("Login successful");
+        }
+ 
+    //5. Predict the result: let x = 10, y = 5; console.log(x>5&&y<10); console.log(x<5 || y<10); Ternary Operator
+
+    let x = 10; 
+    let y = 5;
+    console.log(x>5&&y<10)
+
+     //6. Write a program to check if a number is even or odd using the ternary operator.
+
+        let N = 7;
+        let result = (N % 2 === 0) ? "Even" : "Odd";
+        console.log(result);
+        
+     //7.Use a ternary operator to assign 'Pass' if marks>= 35, otherwise 'Fail'.    
+
+        let Marks = 44;
+        let results = (Marks >= 35) ? "Pass" : "Fail";
+        console.log(results)
+
+    //8. Predict the result: let age = 18; let result = (age>= 18) ? 'Adult' : 'Minor'; console.log(result)
+       
+        let age =18;
+        let Result = (age>=18) ? "Adult" : "Minor"
+        console.log(Result);
+
+        //9. 9.	Write a program to check if a number is positive, negative, or zero (using nested ternary). - Convert this if-else into a ternary statement: if (score>80) { grade = 'A'; } else { grade = 'B'; }
+
+        let num = -5;
+
+        let Output = num > 0 
+    ? "Positive" 
+    : num < 0 
+        ? "Negative" 
+        : "Zero";
+
+console.log(Output);
+</Script>
+</html>
